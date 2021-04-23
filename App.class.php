@@ -211,9 +211,11 @@ class App implements IF_UNIT, IF_APP
 	/** Convert to url from meta url.
 	 *  Correspond to g11n.
 	 *
+	 * @deprecated
 	 * @param   string  $path
 	 * @return  string  $url
 	 */
+	/*
 	static function URL(string $url)
 	{
 		//	...
@@ -257,4 +259,5 @@ class App implements IF_UNIT, IF_APP
 		//	...
 		return '/'.ltrim($result,'/') . ($que ?? null);
 	}
+	*/
 }
