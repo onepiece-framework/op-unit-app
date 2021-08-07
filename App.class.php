@@ -1,10 +1,10 @@
 <?php
 /**
- * unit-app:/App.class.php
+ * op-unit-app:/App.class.php
  *
  * @created   2018-04-04
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
@@ -44,7 +44,7 @@ use function OP\UNIT\APP\GetMIME;
  *
  * @created   2018-04-04
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */

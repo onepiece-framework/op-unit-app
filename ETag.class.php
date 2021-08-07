@@ -1,10 +1,10 @@
 <?php
 /**
- * unit-app:/ETag.class.php
+ * op-unit-app:/ETag.class.php
  *
  * @created   2019-11-21
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
@@ -27,7 +27,7 @@ use OP\Notice;
  *
  * @created   2019-11-21
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */

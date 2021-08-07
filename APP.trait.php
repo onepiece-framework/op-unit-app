@@ -1,10 +1,10 @@
 <?php
 /**
- * unit-app:/APP.trait.php
+ * op-unit-app:/APP.trait.php
  *
  * @created   2019-11-28
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
@@ -19,7 +19,7 @@ namespace OP;
  *
  * @created   2019-11-28
  * @version   1.0
- * @package   unit-app
+ * @package   op-unit-app
  * @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  * @copyright Tomoaki Nagahara All right reserved.
  */
