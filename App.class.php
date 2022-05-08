@@ -35,6 +35,7 @@ use function OP\RootPath;
 use function OP\ConvertURL;
 use function OP\ConvertPath;
 use function OP\CompressPath;
+use function OP\Args;
 use function OP\Content;
 use function OP\Template;
 use function OP\GetTemplate;
@@ -235,4 +236,33 @@ class App implements IF_UNIT, IF_APP
 		return '/'.ltrim($result,'/') . ($que ?? null);
 	}
 	*/
+
+	/** Wrapped Args function at OP\Core.
+	 *
+	 * @deprecated
+	 */
+	static function Args()
+	{
+		Args();
+	}
+
+	/** Wrapped Content function at OP\Core.
+	 *
+	 * @deprecated
+	 * @created   2022-05-07
+	 */
+	static function Template($template, array $args=[], $throw_exception=true)
+	{
+		Template($template, $args, $throw_exception);
+	}
+
+	/** Wrapped Content function at OP\Core.
+	 *
+	 * @deprecated
+	 * @created   2022-05-07
+	 */
+	static function Content()
+	{
+		Content();
+	}
 }
