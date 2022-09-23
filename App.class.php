@@ -19,7 +19,6 @@ namespace OP\UNIT;
  *
  * @created   2019-02-20
  */
-use Exception;
 use OP\OP_CORE;
 use OP\OP_UNIT;
 use OP\OP_SESSION;
@@ -68,11 +67,11 @@ class App implements IF_UNIT, IF_APP
 	function Auto()
 	{
 		try{
+			//	Get End-Point.
+			$endpoint = Unit('Router')->EndPoint();
+
 			//	Is http?
 			if( Env::isHttp() ){
-
-				//	Get End-Point.
-				$endpoint = Unit('Router')->EndPoint();
 
 				//	Check end-point if asset directory.
 				if( strpos($endpoint, RootPath('asset')) === 0 ){
@@ -116,6 +115,7 @@ class App implements IF_UNIT, IF_APP
 				*/
 
 			}else{
+				/*
 				//	In case of shell
 				$root = $_SERVER['PWD'].'/';
 				$path = $_SERVER['argv'][1] ?? 'index.php';
@@ -125,9 +125,10 @@ class App implements IF_UNIT, IF_APP
 				if(!$endpoint = realpath($file) ){
 					throw new Exception("This file has not been exists. ($file)");
 				};
+				*/
 
 				//	...
-				Template($endpoint);
+				Template($endpoint, [], true, true);
 			};
 		}catch( \Throwable $e ){
 			Notice::Set($e);
