@@ -244,7 +244,7 @@ class App implements IF_UNIT, IF_APP
 	 */
 	static function Args()
 	{
-		Args();
+		return Args();
 	}
 
 	/** Wrapped Content function at OP\Core.
