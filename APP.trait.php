@@ -43,4 +43,14 @@ trait UNIT_APP
 				return \OP\Encode( ($key ? $_POST[$key] : $_POST) );
 		};
 	}
+
+	/** Return Canonical
+	 *
+	 * @created   2022-09-30
+	 * @return    string
+	 */
+	static function Canonical()
+	{
+		return Config::Get('app')['canonical'] ?? null;
+	}
 }
