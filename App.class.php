@@ -237,6 +237,7 @@ class App implements IF_UNIT, IF_APP
 	}
 
 	/** Convert to url from meta url.
+	 *  Correspond to g11n.
 	 *
 	 * @param   string  $path
 	 * @return  string  $url
