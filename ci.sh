@@ -9,4 +9,4 @@
  # @author    Tomoaki Nagahara <tomoaki.nagahara@gmail.com>
  # @copyright Tomoaki Nagahara All right reserved.
 
-php ../../ci.php display=0
+php ../../../ci.php display=0
