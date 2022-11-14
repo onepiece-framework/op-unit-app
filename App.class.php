@@ -127,8 +127,8 @@ class App implements IF_UNIT, IF_APP
 				};
 				*/
 
-				//	...
-				Template($endpoint, [], true, true);
+				// TODO: CompressPath() every time is useless.
+				Template(CompressPath($endpoint), [], true, true);
 			};
 		}catch( \Throwable $e ){
 			Notice::Set($e);
