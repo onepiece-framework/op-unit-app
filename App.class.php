@@ -238,7 +238,11 @@ class App implements IF_UNIT, IF_APP
 	}
 	*/
 
-	/** Wrapped Args function at OP\Core.
+	/** Get SmartURI arguments.
+	 *
+	 *  <pre>
+	 *  $args = OP::Unit('Router')->Args();
+	 *  </pre>
 	 *
 	 * @deprecated
 	 */
@@ -247,7 +251,12 @@ class App implements IF_UNIT, IF_APP
 		return Args();
 	}
 
-	/** Wrapped Content function at OP\Core.
+	/** Include template file.
+	 *
+	 *  <pre>
+	 *  OP::Template($file_path);
+	 *  OP::Unit('Template')->Out($file_path);
+	 *  </pre>
 	 *
 	 * @deprecated
 	 * @created   2022-05-07
@@ -257,7 +266,7 @@ class App implements IF_UNIT, IF_APP
 		Template($template, $args, $throw_exception);
 	}
 
-	/** Wrapped Content function at OP\Core.
+	/** Content
 	 *
 	 * @deprecated
 	 * @created   2022-05-07
