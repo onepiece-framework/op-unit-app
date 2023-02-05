@@ -137,6 +137,7 @@ class App implements IF_UNIT, IF_APP
 
 	/** Register WebPack file.
 	 *
+	 * @deprecated 2023-01-30
 	 * @param  string|array  $path
 	 */
 	function WebPack($path)
