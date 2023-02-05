@@ -27,6 +27,7 @@ trait UNIT_APP
 {
 	/** Get to transparently GET or POST.
 	 *
+	 * @deprecated 2023-01-30 Use `OP::Request()`
 	 * @updated  2019-05-10  Add $key param.
 	 * @moved    2019-11-28  App.class.php
 	 * @param    string      $key
