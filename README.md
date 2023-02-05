@@ -8,3 +8,7 @@ Unit of App for onepiece-framework
  * ~G11n~ This is supported by Unit of Router.
 
 # Usage
+
+```
+OP::App()->Auto();
+```
