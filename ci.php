@@ -8,7 +8,7 @@
  * @copyright  Tomoaki Nagahara All right reserved.
  */
 
- /** Declare strict
+/** Declare strict
  *
  */
 declare(strict_types=1);
