@@ -26,14 +26,4 @@ namespace OP;
 trait UNIT_APP
 {
 
-	/** Return Canonical
-	 *
-	 * @deprecated 2023-01-30
-	 * @created   2022-09-30
-	 * @return    string
-	 */
-	static function Canonical()
-	{
-		return Config::Get('app')['canonical'] ?? null;
-	}
 }
