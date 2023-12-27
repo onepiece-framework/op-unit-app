@@ -185,14 +185,4 @@ class App implements IF_UNIT, IF_APP
 		//	...
 		return $uuid;
 	}
-
-	/** Content
-	 *
-	 * @deprecated
-	 * @created   2022-05-07
-	 */
-	static function Content()
-	{
-		Content();
-	}
 }
