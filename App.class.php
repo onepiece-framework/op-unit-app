@@ -135,29 +135,16 @@ class App implements IF_UNIT, IF_APP
 		};
 	}
 
-	/** Get/Set title.
+	/** Get/Set Title for HTML's title tag.
 	 *
 	 * @param  string  $title
 	 * @param  string  $separator
 	 * @return string  $title
 	 */
-	static function Title($title=null, $separator=' | ')
+	static function Title($title=null, $separator=' | ') : ?string
 	{
-		//	...
-		static $_title;
-
-		//	...
-		if( empty($title) ){
-			return $_title;
-		}
-
-		//	...
-		if( empty($_title) ){
-			$_title = Env::Get('app')['title'] ?? null;
-		};
-
-		//	...
-		$_title = $_title ? $title . $separator . $_title : $title;
+		require_once(__DIR__.'/function/Title.php');
+		return APP\Title($title, $separator);
 	}
 
 	/** Unique User ID.
