@@ -186,21 +186,6 @@ class App implements IF_UNIT, IF_APP
 		return $uuid;
 	}
 
-	/** Include template file.
-	 *
-	 *  <pre>
-	 *  OP::Template($file_path);
-	 *  OP::Unit('Template')->Out($file_path);
-	 *  </pre>
-	 *
-	 * @deprecated
-	 * @created   2022-05-07
-	 */
-	static function Template($template, array $args=[], $throw_exception=true)
-	{
-		Template($template, $args, $throw_exception);
-	}
-
 	/** Content
 	 *
 	 * @deprecated
