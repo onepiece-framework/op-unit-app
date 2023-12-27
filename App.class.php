@@ -151,15 +151,9 @@ class App implements IF_UNIT, IF_APP
 	 *
 	 * @return  string  $uuid
 	 */
-	static function UUID()
+	static function UUID() : string
 	{
-		//	...
-		if(!$uuid = Cookie::Get('uuid') ){
-			$uuid = substr( md5($_SERVER['REMOTE_ADDR'] . microtime()), 0, 10);
-			Cookie::Set('uuid', $uuid);
-		}
-
-		//	...
-		return $uuid;
+		require_once(__DIR__.'/function/UUID.php');
+		return APP\UUID();
 	}
 }
