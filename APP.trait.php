@@ -25,25 +25,6 @@ namespace OP;
  */
 trait UNIT_APP
 {
-	/** Get to transparently GET or POST.
-	 *
-	 * @deprecated 2023-01-30 Use `OP::Request()`
-	 * @updated  2019-05-10  Add $key param.
-	 * @moved    2019-11-28  App.class.php
-	 * @param    string      $key
-	 * @return   array       $request
-	 */
-	function Request($key=null)
-	{
-		//	...
-		switch( strtoupper($_SERVER['REQUEST_METHOD'] ?? null) ){
-			case 'GET':
-				return \OP\Encode( ($key ? $_GET [$key] : $_GET ) );
-
-			case 'POST':
-				return \OP\Encode( ($key ? $_POST[$key] : $_POST) );
-		};
-	}
 
 	/** Return Canonical
 	 *
