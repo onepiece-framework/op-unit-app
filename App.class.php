@@ -186,19 +186,6 @@ class App implements IF_UNIT, IF_APP
 		return $uuid;
 	}
 
-	/** Get SmartURI arguments.
-	 *
-	 *  <pre>
-	 *  $args = OP::Unit('Router')->Args();
-	 *  </pre>
-	 *
-	 * @deprecated
-	 */
-	static function Args()
-	{
-		return Args();
-	}
-
 	/** Include template file.
 	 *
 	 *  <pre>
