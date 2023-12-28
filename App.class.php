@@ -1,6 +1,5 @@
 <?php
-/**
- * op-unit-app:/App.class.php
+/** op-unit-app:/App.class.php
  *
  * @created   2018-04-04
  * @version   1.0
@@ -9,36 +8,30 @@
  * @copyright Tomoaki Nagahara All right reserved.
  */
 
+/** Declare strict
+ *
+ */
+declare(strict_types=1);
+
 /** namespace
  *
- * @created   2019-02-20
  */
 namespace OP\UNIT;
 
 /** Used class.
  *
- * @created   2019-02-20
  */
+use OP\IF_UNIT;
+use OP\IF_APP;
 use OP\OP_CORE;
 use OP\OP_UNIT;
 use OP\OP_SESSION;
-use OP\IF_UNIT;
-use OP\IF_APP;
 use OP\Env;
 use OP\Config;
-use OP\Cookie;
-use OP\Notice;
-use OP\UNIT_APP;
 use function OP\Unit;
-use function OP\RootPath;
-use function OP\ConvertURL;
-use function OP\ConvertPath;
-use function OP\CompressPath;
-use function OP\Args;
 use function OP\Content;
-use function OP\Template;
-use function OP\GetTemplate;
-use function OP\UNIT\APP\GetMIME;
+use function OP\RootPath;
+use function OP\CompressPath;
 
 /** App
  *
@@ -53,7 +46,7 @@ class App implements IF_UNIT, IF_APP
 	/** trait.
 	 *
 	 */
-	use OP_CORE, OP_UNIT, OP_SESSION, UNIT_APP;
+	use OP_CORE, OP_UNIT, OP_SESSION;
 
 	/** SmartURL Arguments.
 	 *
@@ -94,7 +87,7 @@ class App implements IF_UNIT, IF_APP
 
 					//	Get MIME
 					include(__DIR__.'/function/GetMIME.php');
-					$mime = GetMIME($ext);
+					$mime = APP\GetMIME($ext);
 
 					//	Set MIME
 					Env::Mime($mime);
@@ -131,7 +124,7 @@ class App implements IF_UNIT, IF_APP
 				Template(CompressPath($endpoint), [], true, true);
 			};
 		}catch( \Throwable $e ){
-			Notice::Set($e);
+			OP()->Notice($e);
 		};
 	}
 
