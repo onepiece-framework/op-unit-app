@@ -29,16 +29,19 @@ function Title($title=null, $separator=' | ') : ?string
 	//	define
 	static $_title;
 
+	//	Init
+	if( empty($_title) ){
+		$_title = OP()->Config('app')['title'] ?? null;
+	};
+
 	//	Get
 	if( empty($title) ){
 		return $_title;
 	}
 
-	//	Init
-	if( empty($_title) ){
-		$_title = \OP\Config('app')['title'] ?? null;
-	};
-
 	//	Set
 	$_title = $_title ? $title . $separator . $_title : $title;
+
+	//	Return
+	return $_title;
 }
