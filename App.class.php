@@ -137,6 +137,7 @@ class App implements IF_APP
 			echo self::$_content;
 			self::$_content = null;
 
+			/*	Disabled fingerprint feature
 			//	...
 			if( OP()->MIME() === 'text/html' ){
 				//	finger print
@@ -146,6 +147,7 @@ class App implements IF_APP
 				}
 				echo "\t<div data-content-hash=\"{$fingerprint}\"></div>\n";
 			}
+			*/
 		}
 	}
 
