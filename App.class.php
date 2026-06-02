@@ -195,6 +195,7 @@ class App implements IF_APP
 	 * @created    2025-11-19
 	 * @return     string
 	 */
+	/*
 	static function FingerPrint() : string
 	{
 		//	...
@@ -207,4 +208,5 @@ class App implements IF_APP
 		//	...
 		return OP()->Encrypt($fingerprint);
 	}
+	*/
 }
